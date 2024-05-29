@@ -1,4 +1,4 @@
-Welcome to Lumache's documentation!
+Biofilter 3.0 Documentation
 ===================================
 
 **Lumache** (/lu'make/) is a Python library for cooks and food lovers
