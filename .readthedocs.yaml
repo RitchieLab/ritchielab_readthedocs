@@ -16,10 +16,6 @@ mkdocs:
   configuration: mkdocs.yml
   fail_on_warning: false
 
-sphinx:
-  configuration: docs/source/conf.py
-  fail_on_warning: true
-
 formats:
   - pdf
   - epub
