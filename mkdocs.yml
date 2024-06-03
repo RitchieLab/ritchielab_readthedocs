@@ -1,1 +1,13 @@
-site_name: Biofilter Documentation
+site_name: Biofilter 3.0 Documentation
+
+nav:
+  - Home: index.md
+  - Biofilter: Biofilter.md
+  - Loki: Loki.md
+
+theme:
+  name: "material"
+
+plugins:
+- search
+- mkdocstrings
