@@ -1,1 +1,3 @@
-__all__ = ["biofilter","loki-build"]
+import biofilter
+
+__all__ = ["biofilter"]
