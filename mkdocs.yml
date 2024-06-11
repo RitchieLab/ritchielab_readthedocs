@@ -12,9 +12,9 @@ plugins:
 - search
 - autorefs
 - mkdocstrings:
-  handlers:
-    python:
-      options:
-        allow_inspection: true
-        show_inheritance_diagram: true
-        show_source: false
+    handlers:
+      python:
+        options:
+          allow_inspection: true
+          show_inheritance_diagram: true
+          show_source: false
