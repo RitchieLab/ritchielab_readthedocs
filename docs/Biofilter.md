@@ -1,2 +1,1 @@
 ::: biofilter.biofilter
-    handler: python

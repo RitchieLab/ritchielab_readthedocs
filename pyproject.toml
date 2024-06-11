@@ -4,5 +4,8 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "Biofilter"
-authors = [{name = "Li", email = "xueqiong.li@pennmedicine.upenn.edu"}]
+authors = [{name = "", email = ""}]
 dynamic = ["version", "description"]
+
+[tool.flit.module]
+name = "biofilter"
