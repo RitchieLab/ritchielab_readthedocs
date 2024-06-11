@@ -1,1 +1,1 @@
-::: biofilter.LOKI.loki-build
+::: biofilter.loki-build
