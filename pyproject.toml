@@ -6,3 +6,6 @@ build-backend = "flit_core.buildapi"
 name = "biofilter"
 authors = [{name = "Li", email = "xueqiong.li@pennmedicine.upenn.edu"}]
 dynamic = ["version", "description"]
+dependencies = [
+    "mkdocstrings-python",
+]
