@@ -11,4 +11,7 @@ theme:
 plugins:
 - search
 - autorefs
-- mkdocstrings
+- mkdocstrings:
+    handlers:
+      python:
+        paths: [src]

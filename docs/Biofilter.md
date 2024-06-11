@@ -1,1 +1,1 @@
-::: biofilter.biofilter
+::: biofilter.biofilter.Biofilter
