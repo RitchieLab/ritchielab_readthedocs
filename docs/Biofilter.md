@@ -1,1 +1,2 @@
-::: biofilter.biofilter.Biofilter
+::: biofilter.biofilter
+    handler: python
