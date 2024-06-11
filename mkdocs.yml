@@ -12,6 +12,3 @@ plugins:
 - search
 - autorefs
 - mkdocstrings:
-    handlers:
-      python:
-        paths: [biofilter]
