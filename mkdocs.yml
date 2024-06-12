@@ -15,6 +15,7 @@ plugins:
     handlers:
       python:
         options:
+          show_submodules: true
           allow_inspection: true
           show_inheritance_diagram: true
           show_source: false
