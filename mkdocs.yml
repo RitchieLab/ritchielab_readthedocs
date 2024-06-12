@@ -15,8 +15,8 @@ plugins:
     handlers:
       python:
         paths: [src]
+        load_external_modules: true
         options:
-          load_external_modules: true
           show_submodules: true
           allow_inspection: true
           show_inheritance_diagram: true
