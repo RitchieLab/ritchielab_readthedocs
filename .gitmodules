@@ -1,8 +1,0 @@
-[submodule "biofilter"]
-	path = biofilter
-	url = https://github.com/RitchieLab/biofilter.git
-
-
-[submodule "LOKI"]
-	path = LOKI
-	url = https://github.com/RitchieLab/LOKI.git
