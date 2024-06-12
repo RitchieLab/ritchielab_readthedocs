@@ -1,3 +1,6 @@
 [submodule "src/biofilter"]
 	path = src/biofilter
 	url = https://github.com/RitchieLab/biofilter.git
+[submodule "src/LOKI"]
+	path = src/LOKI
+	url = https://github.com/RitchieLab/LOKI.git
