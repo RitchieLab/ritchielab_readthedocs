@@ -1,0 +1,3 @@
+[submodule "LOKI"]
+	path = LOKI
+	url = https://github.com/RitchieLab/LOKI.git
