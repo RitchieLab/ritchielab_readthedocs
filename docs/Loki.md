@@ -1,1 +1,1 @@
-::: LOKI.LOKI.loki-build
+::: LOKI.loki-build
