@@ -1,0 +1,3 @@
+[submodule "biofilter"]
+	path = biofilter
+	url = https://github.com/RitchieLab/biofilter.git
