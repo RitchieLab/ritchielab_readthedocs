@@ -18,4 +18,5 @@ mkdocs:
 
 submodules:
   include:
-    - all
+    - biofilter
+    - LOKI
