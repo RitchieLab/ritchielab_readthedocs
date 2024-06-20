@@ -4,7 +4,7 @@ nav:
   - Home: index.md
   - Biofilter: Biofilter.md
   - Biofilter Installation: Biofilter_installation.md
-  - Loki: Loki.md
+  - Biofilter Installation: Loki.md
 
 theme:
   name: "material"
