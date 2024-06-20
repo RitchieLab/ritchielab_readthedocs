@@ -2,9 +2,10 @@ site_name: Biofilter 3.0 Documentation
 
 nav:
   - Home: index.md
-  - Biofilter: Biofilter.md
-  - Biofilter Installation: Biofilter_installation.md
-  - LOKI: Loki.md
+  - Installation: Installation.md
+  - Development: 
+    - Biofilter: Development/Biofilter.md
+    - LOKI: Development/Loki.md
 
 theme:
   name: "material"
