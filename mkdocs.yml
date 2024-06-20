@@ -5,8 +5,8 @@ nav:
   - Biofilter: 
     - Installation: Biofilter/Installation.md
     - Development: 
-      - Biofilter: Biofilter/Development/Biofilter_docsring.md
-      - LOKI: Biofilter/Development/Loki_docsring.md
+      - Biofilter: Biofilter/Development/Biofilter_docstring.md
+      - LOKI: Biofilter/Development/Loki_docstring.md
 
 theme:
   name: "material"
