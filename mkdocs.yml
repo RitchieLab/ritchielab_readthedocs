@@ -14,7 +14,6 @@ plugins:
 - mkdocstrings:
     handlers:
       python:
-        paths: [src]
         options:
           allow_inspection: true
           show_inheritance_diagram: true
