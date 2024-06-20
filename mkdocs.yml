@@ -3,10 +3,10 @@ site_name: Ritchie Lab Documentation
 nav:
   - Home: index.md
   - Biofilter: 
-    - Installation: Installation.md
+    - Installation: Biofilter/Installation.md
     - Development: 
-      - Biofilter: Development/Biofilter.md
-      - LOKI: Development/Loki.md
+      - Biofilter: Biofilter/Development/Biofilter_docsring.md
+      - LOKI: Biofilter/Development/Loki_docsring.md
 
 theme:
   name: "material"
