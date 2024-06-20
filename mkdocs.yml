@@ -3,6 +3,7 @@ site_name: Biofilter 3.0 Documentation
 nav:
   - Home: index.md
   - Biofilter: Biofilter.md
+  - Biofilter Installation: Biofilter_installation.md
   - Loki: Loki.md
 
 theme:
