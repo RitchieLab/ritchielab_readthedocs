@@ -1,6 +1,8 @@
-Biofilter 3.0 Documentation
+LOKI and Biofilter 3.0 Documentation
 =======================================
 
-Read the tutorial here:
+This repository is currently under active development.
+
+Please preview the documentation here:
 
 https://ritchielab.readthedocs.io/en/latest/
