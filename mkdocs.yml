@@ -2,11 +2,30 @@ site_name: Ritchie Lab Documentation
 
 nav:
   - Home: index.md
+  - LOKI:
+    - Installation: LOKI/Installation.md
+    - Overview: BriefOverview.md
+    - Data Schema: DataSchema.md
+    - Knowledge Sources: KnowledgeSources.md
   - Biofilter: 
     - Installation: Biofilter/Installation.md
-    - Development: 
-      - Biofilter: Biofilter/Development/Biofilter_docstring.md
-      - LOKI: Biofilter/Development/Loki_docstring.md
+    - Configuration: Configuration.md
+    - Input File Format: InputFileFormats.md
+    - Output File Format: OutputFileFormats.md
+    - Command Arguments: BiofilterArguments.md
+    - Appendix: Appendix.md
+  - Tutorials:
+    - Filtering: FilteringExamples.md
+    - Annotation: AnnotationExamples.md
+    - Modeling: ModelingExamples.md
+    - Combination: FilteringFollowedbyAnnotationExamples.md
+    - PARIS: PARIS.md
+    - Simulated Examples: SimulatedDataExamples.md
+  - For Developers: 
+      - Biofilter Dev: ForDevelopers/Biofilter_docstring.md
+      - LOKI Dev: ForDevelopers/Loki_docstring.md
+      - Code and References: CodeAndReferences.md
+      - Deprecated Versions: DeprecatedVersions.md
 
 theme:
   name: "material"
