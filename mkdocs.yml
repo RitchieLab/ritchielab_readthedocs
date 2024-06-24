@@ -22,7 +22,8 @@ nav:
     - PARIS: Tutorials/PARIS.md
     - Simulated Examples: Tutorials/SimulatedDataExamples.md
   - For Developers: 
-      - Biofilter Dev: ForDevelopers/Biofilter_docstring.md
+#      - Biofilter Dev: ForDevelopers/Biofilter_docstring.md
+      - Biofilter Dev: "https://ritchielab.readthedocs.io/projects/biofilter/en/latest/"
       - LOKI Dev: ForDevelopers/Loki_docstring.md
       - Code and References: ForDevelopers/CodeAndReferences.md
       - Deprecated Versions: ForDevelopers/DeprecatedVersions.md
