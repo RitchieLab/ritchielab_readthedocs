@@ -28,7 +28,7 @@ nav:
       - Deprecated Versions: ForDevelopers/DeprecatedVersions.md
 
 theme:
-  name: "ivory"
+  name: "rtd"
 
 plugins:
 - search
