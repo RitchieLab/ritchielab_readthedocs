@@ -1,3 +1,4 @@
-#readthedocs-embed-flyout {
-    display: none;
+#readthedocs-flyout {
+    display:block !important;
+    visibility:hidden;
 }
