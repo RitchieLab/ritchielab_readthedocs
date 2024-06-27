@@ -29,8 +29,6 @@ nav:
 
 theme:
   name: readthedocs
-extra_css: 
-  - extra.css
 extra_javascript:
   - extra.js
 
