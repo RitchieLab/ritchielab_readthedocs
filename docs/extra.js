@@ -1,3 +1,5 @@
 $(document).ready(function() {
-    document.getElementsByClassName("floating container bottom-right").forEach(e => e.removeClass('floating bottom-right'));
+    var flyout = document.getElementsByClassName("floating container bottom-right")[0]
+    flyout.removeClass('floating bottom-right')
+    flyout.addClass('wy-nav-side')
 });
