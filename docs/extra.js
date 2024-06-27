@@ -1,3 +1,3 @@
 $(document).ready(function() {
-    document.getElementsByTagName('#readthedocs-flyout')[0].style.visibility = 'hidden' 
+    document.getElementsByTagName('#readthedocs-flyout').forEach(e => e.style.visibility = "hidden");
 });
