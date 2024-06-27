@@ -1,3 +1,3 @@
 $(document).ready(function() {
-    document.getElementsByTagName('#readthedocs-flyout').forEach(e => e.style.visibility = "hidden");
+    document.getElementsByClassName("floating container bottom-right").forEach(e => e.removeClass('floating bottom-right'));
 });
