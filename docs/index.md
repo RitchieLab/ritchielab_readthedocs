@@ -11,7 +11,7 @@ The Ritchie lab has been developing bioinformatics tools and computational resea
 ## Biofilter and LOKI
 Biofilter provides a convenient single interface for accessing multiple publicly available human genetic data sources that have been compiled in the supporting database of the Library of Knowledge Integration (LOKI). Information within LOKI includes genomic locations of SNPs and genes, as well as known relationships among genes and proteins such as interaction pairs, pathways and ontological categories.
 
-*July 2024 Note - Documentation for Biofilter and LOKI is actively being migrated to and updated on readthedocs
+July 2024: *Documentation for Biofilter and LOKI is actively being migrated to and updated on readthedocs*
 
 ## ATHENA
 The Analysis Tool for Heritable and Environmental Network Associations (ATHENA) is a software package that combines statistical and biological variable selection methods with machine learning modeling techniques to identify complex prediction models that can include non-linear interactions and different types of high-throughput data.
