@@ -1,6 +1,6 @@
 <img src="images/ritchie-lab-logo-2022-v3-horizontal-transparent.png" width="250">
 
-# Welcome to the Ritchie Lab's Readthedocs Site!
+# Welcome to the Ritchie Lab's *readthedocs* Site!
 To learn more about our lab, please visit our [lab website](https://ritchielab.org/).
 
 We are in the process of update our lab's software documentation to follow the readthedocs convention and plan to host software manuals and tutorials here in one convenient place.
@@ -16,19 +16,19 @@ Biofilter provides a convenient single interface for accessing multiple publicly
 ## ATHENA
 The Analysis Tool for Heritable and Environmental Network Associations (ATHENA) is a software package that combines statistical and biological variable selection methods with machine learning modeling techniques to identify complex prediction models that can include non-linear interactions and different types of high-throughput data.
 
-More info here: https://ritchielab.org/software/athena-downloads-1
+More info here: [https://ritchielab.org/software/athena-downloads-1](https://ritchielab.org/software/athena-downloads-1)
 
 ## BioBin
 BioBin is a standalone command line application and collapsing method that uses prior biological knowledge from a prebuilt database. While it was specifically developed to investigate rare variant burden in traditional genetic trait studies, BioBin can be used to apply multiple levels of burden testing and is useful for exploring the natural distribution of rare variants in ancestral populations.
 
-More info here: https://ritchielab.org/software/biobin-download-1 
+More info here: [https://ritchielab.org/software/biobin-download-1](https://ritchielab.org/software/biobin-download-1 )
 
 ## PhenoGram
 With PhenoGram researchers can create chomosomal ideograms annotated with lines in color at specific base-pair locations, or colored base-pair to base-pair regions, with or without other annotation. PhenoGram allows for annotation of chromosomal locations and/or regions with shapes in different colors, gene identifiers, or other text. PhenoGram also allows for creation of plots showing expanded chromosomal locations, providing a way to show results for specific chromosomal regions in greater detail.
 
-More info here: https://ritchielab.org/software/phewas-view-download 
+More info here: [https://ritchielab.org/software/phewas-view-download](https://ritchielab.org/software/phewas-view-download) 
 
 ## PheWAS-View
 We have developed the software PheWAS-View for visually integrating PheWAS results, including information about the SNPs, relevant genes, phenotypes, and the interrelationships between phenotypes, that exist in PheWAS. As a result both the fine grain detail as well as the larger trends that exist within PheWAS results can be elucidated.
 
-More info here: https://ritchielab.org/software/phewas-view-download
+More info here: [https://ritchielab.org/software/phewas-view-download](https://ritchielab.org/software/phewas-view-download)
