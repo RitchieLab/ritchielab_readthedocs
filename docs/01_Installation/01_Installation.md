@@ -1,34 +1,82 @@
-# Installation Instructions for Biofilter 3.0
+# Installation Instructions for Biofilter 3.0 and LOKI
 
-## Prerequisites
+## Platforms
+Biofilter was developed in Python for the command-line, and therefore it should run on Linux, Mac OS X or Windows.
+
+For LOKI, we provide a set of Python scripts which dynamically download and compile a local SQLite database. 
+
+
+### Hardware requirements
+* 36GB RAM (preferred) <!-- TODO check this RAM number -->
+    - *Note: Possible with less RAM, but fair warning that your machine may throttle the LOKI build and start paging*
+* 50-75GB free disk space 
+    - *Note: During installation, 70GB of free disk space is needed while LOKI is being built, but the temporary files are automatically removed upon completion* <!-- TODO check this disk space number -->
+
+### Software requirements
+Here is an overview of software requirements and dependencies. We provide step-by-step instructions in the sections below. 
+
+* Python 3.11 or later <!-- TODO check version required -->
+* Python module "apsw" (another Python SQLite wrapper)
+* SQLite, version 3.6 or later
+    - *Note that the dependency on SQLite may be satisfied via the “apsw” Python module, since it often comes with an embedded copy of the necessary SQLite functionality.*
+* Docker Desktop client (optional)
+
+
+## Option 1: Build LOKI via Docker (Recommended)
+For ease across different computing environments and dependencies, we've included a Docker container. 
+
+
+1. [Download & install Docker](https://docs.docker.com/get-docker/) according to your platform (Mac, Linux, Windows)
+    - Quickstart tutorial (external link): [https://docs.docker.com/docker-hub/quickstart/](https://docs.docker.com/docker-hub/quickstart/)
+2. 
+3. Volume mapping
+
+
+### Interacting with Docker containers from your local computer
+A user can interact with the LOKI/Biofilter Docker container from their local computer environment by attaching the Docker image to a volume on their disk.
+
+
+## Option 2: Build LOKI within your local Python environment
+
 The following prerequisites are required to compile the [LOKI](https://ritchielab.github.io/biofilter-manual/02_LOKI/LOKI.html) and run Biofilter:
 
-* Python3
+* Python3 <!-- TODO check version required -->
 * Python module “apsw” (Another Python SQLite Wrapper)
 * SQLite, version 3.6 or later
 
-Note that the dependency on SQLite may be satisfied via the “apsw” Python module, since it often comes with an embedded copy of the necessary SQLite functionality.
 
-## Platforms
-Biofilter was developed in Python, and should therefore run on Linux, Mac OS X or Windows.
 
-## Installing Biofilter
-Biofilter can be downloaded from [Ritchie lab website](https://ritchielab.org/software/biofilter-download-1) or [github](https://github.com/RitchieLab/biofilter/releases). To install it onto your system, run:
+### Download the Latest Release
+1. Download the latest version of Biofilter from the [Github repo](https://github.com/RitchieLab/biofilter/releases). The release will likely be a '.tar.gz' file
+2. Move the 'tar.gz' file to your preferred working directory
+3. Unzip the 'tar.gz' file to reveal a file directory like so:
 
-```
-python setup.py install
-```
+├── biofilter-3.0.0
+│   ├── loki/
+│   ├── biofilter.py
+│   ├── loki-build.py
+│   └── setup.py
 
-This will place the Biofilter and LOKI files in your system’s usual place for Python-based software, which is typically alongside Python itself. The installation can also be done in a different location by using the “`--prefix`” or “`--exec-prefix`” options.
+4. Open up a local terminal
+5. Change directories to the Biofilter folder
+6. Run the following command to run “`setup.py`”, which places the Biofilter and LOKI files in your system’s usual place for Python-based software, which is typically alongside Python itself. The installation can also be done in a different location by using the “`--prefix`” or “`--exec-prefix`” options.
+
+    ```
+    python3 setup.py install
+    ```
 
 ## Compiling Prior Knowledge
-The LOKI prior knowledge database **must** be generated before Biofilter can be used. This is done with the “`loki-build.py`” script which was installed along with Biofilter. There are several options for this utility which are detailed below, but to get started, you just need “`--knowledge`” and “`--update`”:
+Next, we need to generate the LOKI SQLite database **before** Biofilter can be used. This is done with the “`loki-build.py`” script which was installed along with Biofilter. There are several options for this utility which are detailed below, but to get started, you just need “`--knowledge`” and “`--update`”:
 
-```
-loki-build.py --knowledge loki.db --update
-```
+1. Within the same directory as above, run this command:
 
-This will download and process the bulk data files from all supported knowledge sources, storing the result in the file “`loki.db`” (which we recommend naming after the current date, such as “loki-20240521.db”). The update process may take as few as 4 hours or as many as 24 depending on the speed of your internet connection, processor and filesystem, and requires up to 30 GB of free disk space: 10-20 GB of temporary storage (“C:\TEMP” on Windows, “/tmp” on Linux, etc) plus another 5-10 GB for the final knowledge database file.
+    ```
+    loki-build.py --knowledge loki.db --update
+    ```
+
+2. Now, it's a waiting game. Take a break and come back when it's complete.  
+- *More details: This step will download and process the bulk data files from all supported knowledge sources, storing the result in the file “`loki.db`” (which we recommend naming after the current date, such as “loki-20240731.db”) to keep tabs on all local versions you may generate in the future.* 
+- *This process may take as few as 4 hours or as many as 24 depending on the speed of your internet connection, processor and filesystem, and requires up to 70 GB of free disk space: 10-20 GB of temporary storage (“C:\TEMP” on Windows, “/tmp” on Linux, etc) plus another 45 GB for the final knowledge database file.*
 
 By default, the LOKI build script will delete all sources’ bulk data downloads after they have been processed. If the knowledge database will be updated frequently, it is recommended to keep these bulk files available so that any unchanged files will not need to be downloaded again. This can be accomplished with the “`--archive`” option.
 

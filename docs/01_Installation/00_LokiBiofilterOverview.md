@@ -1,3 +1,10 @@
+# Biofilter 3.0
+
+<!-- TODO Add brief, easy to read description of Biofilter -->
+
+
+
+
 # Library of Knowledge Integration ('LOKI')
 Rather than issuing queries in real-time to a series of external databases, Biofilter consults a local database called the **Library of Knowledge Integration**, or nicknamed **LOKI**. 
 
