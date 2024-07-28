@@ -1,8 +1,6 @@
 Welcome to Ritchie Lab readthedocs repo
 ========================
 
-|build-status| |docs| |coverage|
-
 Purpose
 -------
 
