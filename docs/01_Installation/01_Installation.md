@@ -68,15 +68,24 @@ The following prerequisites are required to compile the [LOKI](https://ritchiela
 ## Compiling Prior Knowledge
 Next, we need to generate the LOKI SQLite database **before** Biofilter can be used. This is done with the “`loki-build.py`” script which was installed along with Biofilter. There are several options for this utility which are detailed below, but to get started, you just need “`--knowledge`” and “`--update`”:
 
-1. Within the same directory as above, run this command:
+1. Before we start the LOKI build script, let's install some of the Python package dependencies:
+
+    ```
+    pip install apsw
+    pip install wget
+    ```
+
+2. Within the same directory as above, run this command:
 
     ```
     loki-build.py --knowledge loki.db --update
     ```
 
-2. Now, it's a waiting game. Take a break and come back when it's complete.  
-- *More details: This step will download and process the bulk data files from all supported knowledge sources, storing the result in the file “`loki.db`” (which we recommend naming after the current date, such as “loki-20240731.db”) to keep tabs on all local versions you may generate in the future.* 
-- *This process may take as few as 4 hours or as many as 24 depending on the speed of your internet connection, processor and filesystem, and requires up to 70 GB of free disk space: 10-20 GB of temporary storage (“C:\TEMP” on Windows, “/tmp” on Linux, etc) plus another 45 GB for the final knowledge database file.*
+3. Now, it's a waiting game. Take a break and come back when it's complete.  
+- *More details:*
+    - *Running loki-build on Linux and/or Mac OS will show the download progress in command-line, but doesn't seem to print out on Windows' WSL or via Docker.*
+    - *This step will download and process the bulk data files from all supported knowledge sources, storing the result in the file “`loki.db`” (which we recommend naming after the current date, such as “loki-20240731.db”) to keep tabs on all local versions you may generate in the future.* 
+    - *This process may take as few as 4 hours or as many as 24 depending on the speed of your internet connection, processor and filesystem, and requires up to 70 GB of free disk space: 10-20 GB of temporary storage (“C:\TEMP” on Windows, “/tmp” on Linux, etc) plus another 45 GB for the final knowledge database file.*
 
 By default, the LOKI build script will delete all sources’ bulk data downloads after they have been processed. If the knowledge database will be updated frequently, it is recommended to keep these bulk files available so that any unchanged files will not need to be downloaded again. This can be accomplished with the “`--archive`” option.
 
