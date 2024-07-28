@@ -24,9 +24,9 @@ nav:
     - Knowledge Sources: 03_LOKI/01_KnowledgeSources.md
     - SQLite Data Schema: 03_LOKI/02_DataSchema.md
     - Updating LOKI: 03_LOKI/03_UpdatingLOKI.md
-	- Adding New Databases: 03_LOKI/04_AddingDatabases.md
+  - Adding New Databases: 03_LOKI/04_AddingDatabases.md
     - Simulated Data Examples: 03_LOKI/05_SimulatedDataExamples.md
-  - Cite Us:
+  - Cite And Contribute:
     - Cite Us!: 04_CiteUs/01_CodeAndReferences.md
     - Collaborate & Contribute: 04_CiteUs/02_CollaborateWithUs.md
   - For Developers: 
