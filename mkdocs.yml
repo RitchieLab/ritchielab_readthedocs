@@ -4,11 +4,11 @@ nav:
   - Home: index.md
   - Installation:
     - Overview of LOKI & Biofilter: 01_Installation/00_LokiBiofilterOverview.md
-	- Installation: 01_Installation/01_Installation.md
-	- Biofilter Arguments: 01_Installation/02_BiofilterArguments.md
-	- Biofilter Configuration: 01_Installation/03_Configuration.md
-	- Input File Formats: 01_Installation/04_InputFileFormats.md
-	- Output File Formats: 01_Installation/05_OutputFileFormats.md
+    - Installation: 01_Installation/01_Installation.md
+    - Biofilter Arguments: 01_Installation/02_BiofilterArguments.md
+    - Biofilter Configuration: 01_Installation/03_Configuration.md
+    - Input File Formats: 01_Installation/04_InputFileFormats.md
+    - Output File Formats: 01_Installation/05_OutputFileFormats.md
   - Biofilter: 
     - Let's Get Started: 02_Biofilter/00_GettingStarted.md
     - Filtering Examples: 02_Biofilter/01_FilteringExamples.md
