@@ -2,33 +2,38 @@ site_name: Ritchie Lab Documentation
 
 nav:
   - Home: index.md
-  - LOKI:
-    - Overview of LOKI: 01_LOKI/00_BriefOverview.md
-    - Installation: 01_LOKI/01_Installation.md
-    - Data Schema: 01_LOKI/02_DataSchema.md
-    - Knowledge Sources: 01_LOKI/03_KnowledgeSources.md
+  - Installation:
+    - Overview of LOKI & Biofilter: 01_Installation/00_LokiBiofilterOverview.md
+	- Installation: 01_Installation/01_Installation.md
+	- Biofilter Arguments: 01_Installation/02_BiofilterArguments.md
+	- Biofilter Configuration: 01_Installation/03_Configuration.md
+	- Input File Formats: 01_Installation/04_InputFileFormats.md
+	- Output File Formats: 01_Installation/05_OutputFileFormats.md
   - Biofilter: 
-    - Overview of Biofilter: 02_Biofilter/00_BriefOverview.md
-    - Installation: Biofilter/01_Installation.md
-    - Configuration: Biofilter/02_Configuration.md
-    - Input File Format: Biofilter/03_InputFileFormats.md
-    - Output File Format: Biofilter/04_OutputFileFormats.md
-    - Command Arguments: Biofilter/05_BiofilterArguments.md
-    - Appendix: Biofilter/06_Appendix.md
-  - Tutorials:
-    - Overview of Tutorials: 03_Tutorials/00_TutorialOverview.md
-    - Inspecting LOKI: 03_Tutorials/01_InspectingLOKI.md
-    - Filtering with Biofilter: 03_Tutorials/FilteringExamples.md
-    - Annotation with Biofilter: 03_Tutorials/AnnotationExamples.md
-    - Modeling with Biofilter: 03_Tutorials/ModelingExamples.md
-    - Biofilter Combinations: 03_Tutorials/FilteringFollowedByAnnotationExamples.md
-    - PARIS: 03_Tutorials/PARIS.md
-    - Simulated Examples: 03_Tutorials/SimulatedDataExamples.md
+    - Let's Get Started: 02_Biofilter/00_GettingStarted.md
+    - Filtering Examples: 02_Biofilter/01_FilteringExamples.md
+    - Annotation Examples: 02_Biofilter/02_AnnotationExamples.md
+    - Filtering AND Annotation: 02_Biofilter/03_FilteringFollowedByAnnotationExamples.md
+    - Modeling Examples: 02_Biofilter/04_ModelingExamples.md
+    - Use Case 01: 02_Biofilter/05_UseCase01.md
+    - Use Case 02: 02_Biofilter/06_UseCase02.md
+    - Use Case 03: 02_Biofilter/07_UseCase03.md
+    - Appendix: 02_Biofilter/99_Appendix.md
+  - LOKI:
+    - SQL Tutorial: 03_LOKI/00_SQL-Tutorial.md
+    - Knowledge Sources: 03_LOKI/01_KnowledgeSources.md
+    - SQLite Data Schema: 03_LOKI/02_DataSchema.md
+    - Updating LOKI: 03_LOKI/03_UpdatingLOKI.md
+	- Adding New Databases: 03_LOKI/04_AddingDatabases.md
+    - Simulated Data Examples: 03_LOKI/05_SimulatedDataExamples.md
+  - Cite Us:
+    - Cite Us!: 04_CiteUs/01_CodeAndReferences.md
+    - Collaborate & Contribute: 04_CiteUs/02_CollaborateWithUs.md
   - For Developers: 
-      - LOKI Dev: 04_ForDevelopers/01_Loki_docstring.md
-      - Biofilter Dev: 04_ForDevelopers/02_Biofilter_docstring.md
-      - Code and References: 04_ForDevelopers/CodeAndReferences.md
-      - Previous Versions (Unsupported): 04_ForDevelopers/DeprecatedVersions.md
+    - LOKI Dev: 05_ForDevelopers/01_Loki_docstring.md
+    - Biofilter Dev: 05_ForDevelopers/02_Biofilter_docstring.md
+    - Code and References: 05_ForDevelopers/CodeAndReferences.md
+    - Previous Versions (Unsupported): 05_ForDevelopers/DeprecatedVersions.md
 
 theme:
   name: readthedocs

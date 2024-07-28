@@ -1,8 +1,18 @@
 # Using Biofilter
 
-Biofilter can be run from a command-line terminal by executing “biofilter.py” (or “python biofilter.py”) and specifying the desired inputs, outputs and other optional settings. All options can either be provided directly on the command line (such as “biofilter.py   option name”) or placed in one or more configuration files whose filenames are then provided on the command line (such as “biofilter.py analysis.config”). The former approach may be more convenient for setting up the necessary options to achieve the desired analysis, but the latter approach is recommended for any final runs, since the configuration file then serves as a record of exactly what was done. Any number of configuration files may be used, with options from later files overriding those from earlier files. Options on the command line override those from any configuration file.
+Biofilter can be run from a command-line terminal by executing “biofilter.py” (or “python3 biofilter.py”) and specifying the desired inputs, outputs and other optional settings. 
 
-The available options are the same no matter where they appear, but are formatted differently. Options on the command line are lower-case, start with two dashes and may contain single dashes to separate words (such as “  snp file”), while in a configuration file the same option would be in upper-case, contain no dashes and instead use underscores to separate words (i.e. “SNP_FILE”). Many command line options also have alternative shorthand versions of one or a few letters, such as “ s” for “  snp file” and “  aag” for “  allow ambiguous genes”.
+All options can either be provided directly on the command line (such as “biofilter.py   option name”) or placed in one or more configuration files whose filenames are then provided on the command line (such as “biofilter.py analysis.config”). 
+
+The former approach may be more convenient for setting up the necessary options to achieve the desired analysis, but the latter approach is recommended for any final runs, since the configuration file then serves as a record of exactly what was done. 
+
+Any number of configuration files may be used, with options from later files overriding those from earlier files. Options on the command line override those from any configuration file.
+
+The available options are the same no matter where they appear, but are formatted differently. 
+
+Options on the command line are lower-case, start with two dashes and may contain single dashes to separate words (such as “  snp file”), while in a configuration file the same option would be in upper-case, contain no dashes and instead use underscores to separate words (i.e. “SNP_FILE”). 
+
+Many command line options also have alternative shorthand versions of one or a few letters, such as “ s” for “  snp file” and “  aag” for “  allow ambiguous genes”.
 
 All options are listed here in both their command line and configuration file forms. If an option allows or requires any further arguments, they are also noted along with their default values, if any. Arguments which are required are enclosed in \<angle brackets\>, while arguments which are optional are enclosed in [square brackets].
 

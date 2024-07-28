@@ -51,15 +51,10 @@ PARIS                                           no
 ALLOW_DUPLICATE_OUTPUT                          no
 ```
 
-Any option which can be used on the command line can also be used in a configuration file. Each option
-must appear as the first item on a line, and any arguments to that option must be separated by `whitespace` (any number of tabs or spaces).
+Any option which can be used on the command line can also be used in a configuration file. Each option must appear as the first item on a line, and any arguments to that option must be separated by `whitespace` (any number of tabs or spaces).
 
-If an argument to an option must itself contain spaces (for example a multi-word gene or group
-identifier), the argument may be enclosed with `“`double quotes`”` to prevent the additional words in the
-argument from being interpreted as a separate arguments. If an argument must itself contain double
-quotes, they must be escaped with a backslash, `\”`like so`\”`.
+If an argument to an option must itself contain spaces (for example a multi-word gene or group identifier), the argument may be enclosed with `“`double quotes`”` to prevent the additional words in the argument from being interpreted as a separate arguments. If an argument must itself contain double quotes, they must be escaped with a backslash, `\”`like so`\”`.
 
-There is also one extra option which may only be used in a configuration file: `INCLUDE`. This option
-requires one or more filename arguments and causes Biofilter to read each specified file as an additional
+There is also one extra option which may only be used in a configuration file: `INCLUDE`. This option requires one or more filename arguments and causes Biofilter to read each specified file as an additional
 configuration file. Included files are processed in full before any other options in the original configuration file. For example, if file A includes file B and both files specify the same option, then the option’s setting or value from file A will always override the one from file B, even if it appears before the `INCLUDE` instruction. Included configuration files may also include further files; there is no limit to this recursion, except that any loops (i.e. A includes B which includes A) will raise an error.
 
