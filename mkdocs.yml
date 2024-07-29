@@ -3,14 +3,14 @@ site_name: Ritchie Lab Documentation
 nav:
   - Home: index.md
   - Installation:
-    - Overview of LOKI \& Biofilter: 01_Installation/00_LokiBiofilterOverview.md
+    - Overview of LOKI & Biofilter: 01_Installation/00_LokiBiofilterOverview.md
     - Installation: 01_Installation/01_Installation.md
     - Biofilter Arguments: 01_Installation/02_BiofilterArguments.md
     - Biofilter Configuration: 01_Installation/03_Configuration.md
     - Input File Formats: 01_Installation/04_InputFileFormats.md
     - Output File Formats: 01_Installation/05_OutputFileFormats.md
   - Biofilter: 
-    - Let\'s Get Started: 02_Biofilter/00_GettingStarted.md
+    - Let's Get Started: 02_Biofilter/00_GettingStarted.md
     - Filtering Examples: 02_Biofilter/01_FilteringExamples.md
     - Annotation Examples: 02_Biofilter/02_AnnotationExamples.md
     - Filtering AND Annotation: 02_Biofilter/03_FilteringFollowedByAnnotationExamples.md
@@ -28,7 +28,8 @@ nav:
     - Simulated Data Examples: 03_LOKI/05_SimulatedDataExamples.md
   - Cite And Contribute:
     - Cite Us!: 04_CiteUs/01_CodeAndReferences.md
-    - Collaborate \& Contribute: 04_CiteUs/02_CollaborateWithUs.md
+    - Submit Feature Request: 04_CiteUs/02_SubmitFeatureRequest.md
+    - Collaborate & Contribute: 04_CiteUs/03_CollaborateWithUs.md
   - For Developers: 
     - LOKI Dev: 05_ForDevelopers/01_Loki_docstring.md
     - Biofilter Dev: 05_ForDevelopers/02_Biofilter_docstring.md
