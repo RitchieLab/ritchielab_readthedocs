@@ -79,7 +79,9 @@ Next, we need to generate the LOKI SQLite database **before** Biofilter can be u
 
     ```
     loki-build.py --knowledge loki.db --update
+    # there's options to a partial list of data sources instead of building with all 
     ```
+<!-- TODO add in instructions for building only with some dbs -->
 
 3. Now, it's a waiting game. Take a break and come back when it's complete.  
 - *More details:*
