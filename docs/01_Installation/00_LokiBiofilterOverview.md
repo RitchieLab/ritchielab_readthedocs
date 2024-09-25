@@ -1,6 +1,6 @@
 # Biofilter 3.0
 
-<!-- TODO Add brief, easy to read description of Biofilter -->
+<!-- TODO Add easy to read description of Biofilter -->
 
 
 

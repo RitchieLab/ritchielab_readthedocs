@@ -33,8 +33,8 @@ nav:
   - For Developers: 
     - LOKI Dev: 05_ForDevelopers/01_Loki_docstring.md
     - Biofilter Dev: 05_ForDevelopers/02_Biofilter_docstring.md
-    - Code and References: 05_ForDevelopers/CodeAndReferences.md
-    - Previous Versions (Unsupported): 05_ForDevelopers/DeprecatedVersions.md
+    - Code and References: 05_ForDevelopers/04_CodeAndReferences.md
+    - Previous Versions (Unsupported): 05_ForDevelopers/03_DeprecatedVersions.md
 
 theme:
   name: readthedocs
