@@ -72,6 +72,8 @@ Next, we need to generate the LOKI SQLite database **before** Biofilter can be u
 
     ```
     pip install apsw
+    ```
+    ```
     pip install wget
     ```
 
