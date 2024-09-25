@@ -51,11 +51,11 @@ The following prerequisites are required to compile the [LOKI](https://ritchiela
 2. Move the 'tar.gz' file to your preferred working directory
 3. Unzip the 'tar.gz' file to reveal a file directory like so:
 
-├── biofilter-3.0.0
-│   ├── loki/
-│   ├── biofilter.py
-│   ├── loki-build.py
-│   └── setup.py
+├── biofilter-3.0.0<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── loki/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── biofilter.py<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── loki-build.py<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── setup.py
 
 4. Open up a local terminal
 5. Change directories to the Biofilter folder
@@ -73,7 +73,7 @@ Next, we need to generate the LOKI SQLite database **before** Biofilter can be u
     ```
     pip install apsw
     ```
-
+    <br>
     ```
     pip install wget
     ```
@@ -82,7 +82,10 @@ Next, we need to generate the LOKI SQLite database **before** Biofilter can be u
 
     ```
     loki-build.py --knowledge loki.db --update
-    \# there's options to a partial list of data sources instead of building with all 
+    ```
+    <br>
+    ```
+     # there's options to a partial list of data sources instead of building with all 
     ```
 <!-- TODO add in instructions for building only with some dbs -->
 
@@ -99,18 +102,18 @@ By default, the LOKI build script will delete all sources’ bulk data downloads
 
 | **Option** | **Arguments** | **Information** |
 |---|:-:|---|
-| `--help` | | Displays the program usage and immediately exits. |
-| `--version` | | Displays the software versions and immediately exits. Note that LOKI is built upon SQLite, which will also report its own software versions. |
-| `--knowledge` | *\<\file>* | Default: *none*. Specifies the prior knowledge database file to use. |
-| `--archive` | *\<\file>*|Default: *none*. Shorthand for specifying the same file as both the “`--from-archive`” and “`--to-archive`”. |
-| `--from-archive` | *\<\file>* | Default: *none*. An archive of downloaded bulk data from a previous run of the LOKI build script. The bulk data files available for download from each source will be compared against those found in the archive, and only files which have changed will be downloaded. If not specified, the script will start from scratch and download everything. |
-| `--to-archive` | *\<\file>* | Default: *none*. A file in which to archive the downloaded bulk data for a later run of the LOKI build script. If not specified, the script will reclaim disk space by deleting all original data after processing it. |
-| `--temp-directory` | *\<\directory>* | Default: *platform-dependent*. The directory in which to unpack the “`--from-archive`” (if any) and then download new bulk data. If not specified, the system’s default temporary directory is used. |
-| `--list-sources`  | *[source][…]* | Default: *none*. List the specified source module loaders’ software versions and any options they accept. If no sources are specified, all available modules are listed. |
+| `--help` | *none* | Displays the program usage and immediately exits. |
+| `--version` | *none* | Displays the software versions and immediately exits. Note that LOKI is built upon SQLite, which will also report its own software versions. |
+| `--knowledge` | <*file*> | Default: *none*. Specifies the prior knowledge database file to use. |
+| `--archive` | <*file*> |Default: *none*. Shorthand for specifying the same file as both the “`--from-archive`” and “`--to-archive`”. |
+| `--from-archive` | <*file*> | Default: *none*. An archive of downloaded bulk data from a previous run of the LOKI build script. The bulk data files available for download from each source will be compared against those found in the archive, and only files which have changed will be downloaded. If not specified, the script will start from scratch and download everything. |
+| `--to-archive` | <*file*> | Default: *none*. A file in which to archive the downloaded bulk data for a later run of the LOKI build script. If not specified, the script will reclaim disk space by deleting all original data after processing it. |
+| `--temp-directory` | <*directory*> | Default: *platform-dependent*. The directory in which to unpack the “`--from-archive`” (if any) and then download new bulk data. If not specified, the system’s default temporary directory is used. |
+| `--list-sources`  | *\[source\]\[…\]* | Default: *none*. List the specified source module loaders’ software versions and any options they accept. If no sources are specified, all available modules are listed. |
 | `--cache-only` | *none* | Causes the build script to skip checking any knowledge sources for available bulk data downloads, allowing it to function without an internet connection. Instead, only the files already available in the provided “`--from-archive`” file will be processed. If any source loader module is unable to find an expected file (such as if no archive was provided), that source loader will fail and no data will be updated for that source. |
-| `--update` | *[source][…]* | Default: *all*. Instructs the build script to process the bulk data from the specified sources and update their representation in the knowledge database. If no sources are specified, all supported sources will be updated. |
-| `--update-except` | *[source][…]* | Default: *none*. Similar to “`--update`” but with the opposite meaning for the specified sources: all supported sources will be updated except for the ones specified. If no sources are specified, none are excluded, and all supported sources are updated. |
-| `--option` | *\<\source>\<\options>* | Default: *none*. Passes additional options to the specified source loader module. The options string must be of the form “option1=value,option2=value” for any number of options and values. Supported options and values for each source can be shown with “`--list-sources`”. |
+| `--update` | *\[source\]\[…\]* | Default: *all*. Instructs the build script to process the bulk data from the specified sources and update their representation in the knowledge database. If no sources are specified, all supported sources will be updated. |
+| `--update-except` | *\[source\]\[…\]* | Default: *none*. Similar to “`--update`” but with the opposite meaning for the specified sources: all supported sources will be updated except for the ones specified. If no sources are specified, none are excluded, and all supported sources are updated. |
+| `--option` | <*source*><*options*> | Default: *none*. Passes additional options to the specified source loader module. The options string must be of the form “option1=value,option2=value” for any number of options and values. Supported options and values for each source can be shown with “`--list-sources`”. |
 | `--force-update` | *none* | The build script will normally only update from a sources if it detects that an update is necessary, either because new data files have been downloaded from the source or because the source’s loader module code has been updated. With this option, the build script will update all specified sources, even if it believes no update is necessary. |
 | `--finalize` | *none* | Causes the build script to discard all intermediate data and optimize the knowledge database (after performing an “`--update`”, if any). This reduces the knowledge database file size and greatly improves its performance, however it will no longer be possible to update the file with any new source data. |
 | `--no-optimize` | *none* | Instructs the build script to skip the database optimization and compacting step that it normally performs after completing all source updates. This may be useful if you know you will be updating additional sources later, since the optimization can take some time and will have to be done again anyway after the next update. |
