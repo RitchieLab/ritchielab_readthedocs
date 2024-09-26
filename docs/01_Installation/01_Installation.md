@@ -31,12 +31,12 @@ For ease across different computing environments and dependencies, we've include
 3. Run the Biofilter Docker Container: On macOS or Linux, use the following command to attach a local volume (`biofilter-loki` is just a placeholder, you can name it what you like):
 
     
-    ##macOS
+    ### macOS
     ```
     docker run -v /path/to/local/data:/data -it biofilter-loki
     ```
 
-    ##Windows
+    ### Windows
     ```
     docker run -v C:/path/to/local/data:/data -it biofilter-loki
     ```
