@@ -23,13 +23,19 @@ Here is an overview of software requirements and dependencies. We provide step-b
 
 
 ## Option 1: Build LOKI via Docker (Recommended)
-For ease across different computing environments and dependencies, we've included a Docker container. 
-
+For ease across different computing environments and dependencies, we've included a Docker container. Docker allows you to package Biofilter, along with all its dependencies and configurations, into a container. This ensures that the tool runs exactly the same on any system, whether it's your local machine, a cloud server, or another researcher's environment. It eliminates "it works on my machine" issues. <!-- TODO check if this description sounds ok. Some might not know why Docker container helps so added a brief explaination -->
 
 1. [Download & install Docker](https://docs.docker.com/get-docker/) according to your platform (Mac, Linux, Windows)
     - Quickstart tutorial (external link): [https://docs.docker.com/docker-hub/quickstart/](https://docs.docker.com/docker-hub/quickstart/)
 2. 
-3. Volume mapping
+3. Volume Mapping- Running the Biofilter Docker Container
+
+    To run the Biofilter Docker container and attach a local volume, use the following command for your operating system (biofilter-loki is just a placeholder, you can name it what you like):
+
+    ### On macOS or Linux
+
+    ```bash
+    docker run -v /path/to/local/data:/data -it biofilter-loki
 
 
 ### Interacting with Docker containers from your local computer
