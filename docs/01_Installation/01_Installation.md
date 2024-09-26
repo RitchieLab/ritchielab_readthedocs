@@ -29,13 +29,12 @@ For ease across different computing environments and dependencies, we've include
     - Quickstart tutorial (external link): [https://docs.docker.com/docker-hub/quickstart/](https://docs.docker.com/docker-hub/quickstart/)
 2. 
 3. Volume Mapping- Running the Biofilter Docker Container
+    - To run the Biofilter Docker container and attach a local volume, use the following command for your operating system (biofilter-loki is just a placeholder, you can name it what you like):
+    - On macOS or Linux
 
-    To run the Biofilter Docker container and attach a local volume, use the following command for your operating system (biofilter-loki is just a placeholder, you can name it what you like):
-
-    ### On macOS or Linux
-
-    ```bash
+    ```
     docker run -v /path/to/local/data:/data -it biofilter-loki
+    ```
 
 
 ### Interacting with Docker containers from your local computer
