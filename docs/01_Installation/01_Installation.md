@@ -23,7 +23,7 @@ Here is an overview of software requirements and dependencies. We provide step-b
 
 
 ## Option 1: Build LOKI via Docker (Recommended)
-For ease across different computing environments and dependencies, we've included a Docker container. Docker allows you to package Biofilter, along with all its dependencies and configurations, into a container. This ensures that the tool runs exactly the same on any system, whether it's your local machine, a cloud server, or another researcher's environment. It eliminates "it works on my machine" issues. <!-- TODO check if this description sounds ok. Some might not know why Docker container helps so added a brief explaination -->
+For ease across different computing environments and dependencies, we've included a Docker container. Docker allows you to package Biofilter, along with all its dependencies and configurations, into a container. This ensures that the tool runs exactly the same on any system, whether it's your local machine, a cloud server, or another researcher's environment. It helps eliminate the "it works on my machine" issues. <!-- TODO check if this description sounds ok. Some might not know why Docker container helps so added a brief explaination -->
 
 1. [Download & install Docker](https://docs.docker.com/get-docker/) according to your platform (Mac, Linux, Windows)
     - Quickstart tutorial (external link): [https://docs.docker.com/docker-hub/quickstart/](https://docs.docker.com/docker-hub/quickstart/)
@@ -132,6 +132,7 @@ If a given set of analyses need to be repeatable or verifiable, such as those pu
 
 
 ## LD Profiles (TODO Deprecate?)
+<!-- TODO a quick note:  If the ability to adjust gene regions based on LD is still relevant for users, especially for studies involving populations with known LD patterns, it could remain valuable so maybe don't deprecate just yet?. If maintaining the LD profile generation feature (e.g., LD Spline) is resource-intensive, it may make sense to deprecate it to focus on more impactful updates. -->
 
 Biofilter and LOKI allow for gene regions to be adjusted by the linkage disequilibrium (LD) patterns in a given population. When comparing a known gene region to any other region or position (such as CNVs or SNPs), areas in high LD with a gene can be considered part of the gene, even if the region lies outside of the gene’s canonical boundaries.
 
