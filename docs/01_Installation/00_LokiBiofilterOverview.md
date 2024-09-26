@@ -1,8 +1,6 @@
 # Biofilter 3.0
-
 <!-- TODO Add easy to read description of Biofilter -->
-
-
+Biofilter is a tool that helps combine genetic and biological data to prioritize and analyze important genetic variations in complex traits. It takes data from different sources, like biological pathways and gene interactions, and combines them in one place. By organizing this data, Biofilter simplifies the process of identifying genetic variants involved in complex traits by offering a structured framework for managing and analyzing genetic information, saving users the time and effort of manually searching through individual databases.
 
 
 # Library of Knowledge Integration ('LOKI')
