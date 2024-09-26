@@ -32,11 +32,12 @@ For ease across different computing environments and dependencies, we've include
 
     
     ##macOS
+    ```
     docker run -v /path/to/local/data:/data -it biofilter-loki
     ```
 
-    ```
     ##Windows
+    ```
     docker run -v C:/path/to/local/data:/data -it biofilter-loki
     ```
 
