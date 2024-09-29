@@ -13,24 +13,24 @@ There are two main ways to provide inputs and configure settings:
 2. **Using configuration files:**
     - Recommended for final runs, as these files serve as a record of exactly what was done and can be reused easily.
 
-### Command Line Options vs Configuration File Options
+## Command Line Options vs Configuration File Options
 Any number of configuration files may be used, with options from later files overriding those from earlier files. Options on the command line override those from any configuration file.
 
 The available options are the same no matter where they appear, but are formatted differently. 
 **Command Line:** Options are lowercase, start with two dashes `--`, and use single dashes `-` to separate words.
-    - Example: `--snp-file or -s`
+- Example: `--snp-file or -s`
 
 **Configuration File:** Options are uppercase, contain no dashes, and use underscores `_` to separate words.
-    - Example: `SNP_FILE`
+- Example: `SNP_FILE`
 
-### Example 1: Running Biofilter via Command Line
+## Example 1: Running Biofilter via Command Line
 Here is an example of running Biofilter with options directly from the command line:
 ```
 python3 biofilter.py --snp-file snp_data.txt --allow-ambiguous-genes
 ```
 In this case, the snp-file is provided with the `--snp-file option`, and ambiguous genes are allowed by adding the `--allow-ambiguous-genes flag`.
 
-### Example 2: Using a Configuration File
+## Example 2: Using a Configuration File
 You can place all options in a configuration file, which is ideal for saving your settings:
 `analysis.config` **(Configuration File):**
 ```
@@ -48,8 +48,8 @@ python3 biofilter.py analysis.config --snp-file new_snp_data.txt
 ```
 ## Option Shorthands
 For convenience, many command line options also have shorthand versions:
-    - Long-form: `--snp-file`
-    - Short-form: `-s`
+- Long-form: `--snp-file`
+- Short-form: `-s`
 **Example Using Shorthand Options:**
 ```
 python3 biofilter.py -s snp_data.txt -aag
