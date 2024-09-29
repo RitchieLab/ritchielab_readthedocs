@@ -1,18 +1,60 @@
 # Using Biofilter
+### Biofilter from the Command Line
 
 Biofilter can be run from a command-line terminal by executing “biofilter.py” (or “python3 biofilter.py”) and specifying the desired inputs, outputs and other optional settings. 
+    ```
+    python3 biofilter.py [options]
+    ```
+There are two main ways to provide inputs and configure settings:
 
-All options can either be provided directly on the command line (such as “biofilter.py   option name”) or placed in one or more configuration files whose filenames are then provided on the command line (such as “biofilter.py analysis.config”). 
+1. **Directly on the command line:**
+    - This is useful for quick tests or small-scale analyses.
 
-The former approach may be more convenient for setting up the necessary options to achieve the desired analysis, but the latter approach is recommended for any final runs, since the configuration file then serves as a record of exactly what was done. 
+2. **Using configuration files:**
+    - Recommended for final runs, as these files serve as a record of exactly what was done and can be reused easily.
 
+### Command Line Options vs Configuration File Options
 Any number of configuration files may be used, with options from later files overriding those from earlier files. Options on the command line override those from any configuration file.
 
 The available options are the same no matter where they appear, but are formatted differently. 
+**Command Line:** Options are lowercase, start with two dashes `--`, and use single dashes `-` to separate words.
+    - Example: `--snp-file or -s`
 
-Options on the command line are lower-case, start with two dashes and may contain single dashes to separate words (such as “  snp file”), while in a configuration file the same option would be in upper-case, contain no dashes and instead use underscores to separate words (i.e. “SNP_FILE”). 
+**Configuration File:** Options are uppercase, contain no dashes, and use underscores `_` to separate words.
+    - Example: `SNP_FILE`
 
-Many command line options also have alternative shorthand versions of one or a few letters, such as “ s” for “  snp file” and “  aag” for “  allow ambiguous genes”.
+### Example 1: Running Biofilter via Command Line
+Here is an example of running Biofilter with options directly from the command line:
+```
+python3 biofilter.py --snp-file snp_data.txt --allow-ambiguous-genes
+```
+In this case, the snp-file is provided with the `--snp-file option`, and ambiguous genes are allowed by adding the `--allow-ambiguous-genes flag`.
+
+### Example 2: Using a Configuration File
+You can place all options in a configuration file, which is ideal for saving your settings:
+`analysis.config` **(Configuration File):**
+```
+SNP_FILE=snp_data.txt
+ALLOW_AMBIGUOUS_GENES=1
+```
+You would run Biofilter using this configuration file with the following command:
+```
+python3 biofilter.py analysis.config
+```
+### Combining Command Line and Configuration Files
+You can also combine both methods by overriding settings in the configuration file from the command line. For example, if your configuration file has a different SNP file but you want to override it for a single run, you can specify a new SNP file on the command line:
+```
+python3 biofilter.py analysis.config --snp-file new_snp_data.txt
+```
+## Option Shorthands
+For convenience, many command line options also have shorthand versions:
+    - Long-form: `--snp-file`
+    - Short-form: `-s`
+**Example Using Shorthand Options:**
+```
+python3 biofilter.py -s snp_data.txt -aag
+```
+Here, the shorthand `-s` is used for `--snp-file`, and `-aag` is used for `--allow-ambiguous-genes`.
 
 All options are listed here in both their command line and configuration file forms. If an option allows or requires any further arguments, they are also noted along with their default values, if any. Arguments which are required are enclosed in \<angle brackets\>, while arguments which are optional are enclosed in [square brackets].
 
