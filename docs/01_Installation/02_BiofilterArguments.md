@@ -18,10 +18,10 @@ Any number of configuration files may be used, with options from later files ove
 
 The available options are the same no matter where they appear, but are formatted differently. 
 **Command Line:** Options are lowercase, start with two dashes `--`, and use single dashes `-` to separate words.
-- Example: `--snp-file or -s`
+    - Example: `--snp-file or -s`
 
 **Configuration File:** Options are uppercase, contain no dashes, and use underscores `_` to separate words.
-- Example: `SNP_FILE`
+    - Example: `SNP_FILE`
 
 ## Example 1: Running Biofilter via Command Line
 Here is an example of running Biofilter with options directly from the command line:
@@ -48,8 +48,8 @@ python3 biofilter.py analysis.config --snp-file new_snp_data.txt
 ```
 ## Option Shorthands
 For convenience, many command line options also have shorthand versions:
-- Long-form: `--snp-file`
-- Short-form: `-s`
+    - Long-form: `--snp-file`
+    - Short-form: `-s`
 **Example Using Shorthand Options:**
 ```
 python3 biofilter.py -s snp_data.txt -aag
