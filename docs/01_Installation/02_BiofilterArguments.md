@@ -25,14 +25,14 @@ The available options are the same no matter where they appear, but are formatte
 
 - Example: `SNP_FILE`
 
-## Example 1: Running Biofilter via Command Line
+### Example 1: Running Biofilter via Command Line
 Here is an example of running Biofilter with options directly from the command line:
 ```
 python3 biofilter.py --snp-file snp_data.txt --allow-ambiguous-genes
 ```
 In this case, the snp-file is provided with the `--snp-file option`, and ambiguous genes are allowed by adding the `--allow-ambiguous-genes flag`.
 
-## Example 2: Using a Configuration File
+### Example 2: Using a Configuration File
 You can place all options in a configuration file, which is ideal for saving your settings:
 `analysis.config` **(Configuration File):**
 ```
